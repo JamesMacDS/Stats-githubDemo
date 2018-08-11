@@ -15,6 +15,12 @@ Group 3
 ===
 
 Group 4
+
+library(readxl)                     #we need to load this tidyverse package
+carPrice<- read_excel("kuiper.xls") #now we just import the dataset and store it 
+carPrice
+
+
 ===
 #Comment
 
