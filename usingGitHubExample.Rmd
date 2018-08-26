@@ -13,6 +13,10 @@ This is an [R Markdown](http://rmarkdown.rstudio.com) Notebook. When you execute
 Try executing this chunk by clicking the *Run* button within the chunk or by placing your cursor inside it and pressing *Cmd+Shift+Enter*. 
 
 Lets go get us a dataset!
+```{r}
+a=2
+b=3
+```
 
 ```{r}
 library(tidyverse)
@@ -111,12 +115,13 @@ Insert some text here
 
 Group 6
 ===
+Using linear regression and coefficent to determine if there is a relationship betwee BMI and the height.
 
-Insert some text here
 
 ```{r}
 #Code blocks can go inside these quoted delimeters
-
+slm <- lm(BMI~height,data=newStarwars)
+coef(slm)
 ```
 
 Group 7
